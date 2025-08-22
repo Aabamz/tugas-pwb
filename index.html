@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background dan teks*/
+body {
+    background: #121212;
+    color: #f0efef;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #eeeeee;
+    font-size: 1.5rem;
+    border-left: 5px solid #00adb5;
+    padding-left: 10px;
+}
+
+/* Paragraf */
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+/* List */
+ul, ol {
+    margin: 15px 0 15px 40px;
+}
+
+ul li, ol li {
+    margin: 8px 0;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+ul li:hover, ol li:hover {
+    color: #00adb5;
+    transform: translateX(8px);
+}
+
+/* Link */
+a {
+    color: #00adb5;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border: 2px solid #00adb5;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: #00adb5;
+    color: #121212;
+}
+
+/* Container tengah */
+body > * {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* biar enak diliat di hp*/
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1><strong>Media Online</strong></h1>
+    <h2><strong>Sosial Media Developer</strong></h2>
+    <p>Belajar dan berbagi agar hidup menjadi lebih baik</p>
+
+    <h2><strong>Benefit Join Di Media Online</strong></h2>
+    <ul>
+        <li>Mendapatkan motivasi dari sesama para developer</li>
+        <li>Sharing knowledge</li>
+        <li>Dibuat oleh calon web developer terbaik</li>
+    </ul>
+
+    <h2><strong>Cara Bergabung ke Media Online</strong></h2>
+    <ol>
+        <li>Mengunjungi website ini</li>
+        <li>Mendaftarkan di <a href="form.html">Form Sign Up</a></li>
+        <li>Selesai</li>
+    </ol>
+</body>
+</html>
