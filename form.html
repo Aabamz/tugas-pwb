@@ -8,147 +8,140 @@
 
     <style>
         /* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-/* Background dan teks */
-body {
-    background: #121212;
-    color: #ebe8e8;
-    line-height: 1.6;
-    padding: 20px;
-}
+        /* Background dan teks */
+        body {
+            background: linear-gradient( #d41082, #e66b19, #2c5364);
+            color: #ebe8e8;
+            line-height: 1.6;
+            padding: 20px;
+        }
 
-/* Judul */
-h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #00adb5;
-    margin-bottom: 10px;
-}
+        /* Judul */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #00adb5;
+            margin-bottom: 10px;
+        }
 
-h3 {
-    text-align: center;
-    color: #eeeeee;
-    margin-bottom: 25px;
-}
+        h3 {
+            text-align: center;
+            color: #eeeeee;
+            margin-bottom: 25px;
+        }
 
-/* Form container */
-body > * {
-    max-width: 600px;
-    margin: auto;
-    padding: 5px;
-}
+        /* Form container */
+        body > * {
+            max-width: 600px;
+            margin: auto;
+            padding: 5px;
+        }
 
-/* Label dan input */
-p {
-    margin: 10px 0 5px;
-    color: #12f3ce;
-    font-weight: bold;
-}
+        /* Label dan input */
+        p {
+            margin: 10px 0 5px;
+            color: #12f3ce;
+            font-weight: bold;
+        }
 
-input[type="text"], 
-select, 
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #00adb5;
-    border-radius: 6px;
-    background: #1e1e1e;
-    color: #e0e0e0;
-    outline: none;
-    transition: border 0.3s ease;
-}
+        input[type="text"], 
+        select, 
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #00adb5;
+            border-radius: 6px;
+            background: #1e1e1e;
+            color: #e0e0e0;
+            outline: none;
+            transition: border 0.3s ease;
+        }
 
-input[type="text"]:focus, 
-select:focus, 
-textarea:focus {
-    border-color: #1abc9c;
-}
+        input[type="text"]:focus, 
+        select:focus, 
+        textarea:focus {
+            border-color: #1abc9c;
+        }
 
-/* Radio dan checkbox */
-input[type="radio"], input[type="checkbox"] {
-    margin-right: 6px;
-    transform: scale(1.1);
-}
+        /* Radio dan checkbox */
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 6px;
+            transform: scale(1.1);
+        }
 
-/* tombol */
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #121212;
-    background: #00adb5;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
+        /* tombol */
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #121212;
+            background: #00adb5;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
 
-button:hover {
-    background: #1abc9c;
-    transform: scale(1.05);
-}
+        button:hover {
+            background: #1abc9c;
+            transform: scale(1.05);
+        }
 
-/* iar enak diliat di hp */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.2rem;
-    }
-}
+        /* biar enak diliat di hp */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
     </style>
-
 </head>
 <body>
     <h1><strong>Buat Account Baru</strong></h1>
     <h3><strong>Sign up form</strong></h3>  
 
     <p>First Name :</p>                                 
-    <input type="text" ><br><br>
+    <input type="text" >
 
     <p>Last Name :</p>                                 
-    <input type="text" ><br><br>
+    <input type="text" >
 
     <p>Gender</p>
     <input type="radio" id="pria" name="gender" value="Pria">
     <label for="pria">Pria</label><br>
-    <input type="radio" id="wanita" name="wanita" value="wanita">
-    <label for="pria">wanita</label>
+    <input type="radio" id="wanita" name="gender" value="Wanita">
+    <label for="wanita">Wanita</label>
 
     <p>Nationality</p>
     <select id="negara" name="negara">
         <option value="Indonesia">Indonesia</option>
         <option value="Malaysia">Malaysia</option>
         <option value="Singapura">Singapura</option>
-        </select>
-        <br>
+    </select>
 
-        <p>Language Spoken</p>
-    <input type="checkbox">
-    <label for="Bahasa Indonesia">Bahasa Indonesia</label>
-    <br>
-    <input type="checkbox">
-    <label for="English">English</label>
-    <br>
-    <input type="checkbox">
-    <label for="Other">Other</label>
+    <p>Language Spoken</p>
+    <input type="checkbox" id="lang1">
+    <label for="lang1">Bahasa Indonesia</label><br>
+    <input type="checkbox" id="lang2">
+    <label for="lang2">English</label><br>
+    <input type="checkbox" id="lang3">
+    <label for="lang3">Other</label>
     
-    <br><br>
     <p>Bio</p>
     <textarea id="pesan" name="pesan" rows="5" cols="30"></textarea><br>
     <input type="hidden" name="id_user" value="123"><br>
-    <a href="welcome.html">  <button type="submit">Sign up</button></a>
-                            
-   
 
+    <button type="button" onclick="location.href='welcome.html'">Sign up</button>
 </body>
 </html>
